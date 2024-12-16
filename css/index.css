@@ -49,4 +49,7 @@
     .navbar{
         background: var(--purple);
     }
+    .navbar-nav{
+        margin: 0 auto;
+    }
 }
