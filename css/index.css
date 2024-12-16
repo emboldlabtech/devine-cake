@@ -1,11 +1,17 @@
 :root{
     --purple: #5126AF;
-    --white: #EEE5FF;
 }
 *{
     margin: 0;
 }
-
+ body{
+    font-family: "Poppins";
+    font-weight: 400;
+ }
+ h1,h2,h3,h4,h5,h6{
+    font-family: "Playfair Display";
+    font-weight: 400;
+ }
 .heading{
     display: flex;
     justify-content: space-between;
@@ -18,8 +24,13 @@
     margin: 0px 20px;
 }
 .navbar div a{
-    text-decoration: none;
-    color: var(--white);
+    color: #c0c0c0;
+}
+.navbar div a:hover{
+    color: #FFF;
+}
+.navbar div .actives{
+    color: #FFF;
 }
 .search input{
     outline: none;
