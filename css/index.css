@@ -3,10 +3,12 @@
 }
 *{
     margin: 0;
+    padding: 0;
 }
  body{
     font-family: "Poppins";
     font-weight: 400;
+    overflow-x: hidden;
  }
  h1,h2,h3,h4,h5,h6{
     font-family: "Playfair Display";
@@ -45,6 +47,21 @@
     width: 50px;
     height: 60px;
 }
+.hero button{
+    background: var(--purple);
+    color: #FFFFFF;
+    box-shadow:  -4px 4px 1px var(--purple);
+    border: 1px solid black;
+    padding: 10px 24px;
+    border-radius: 4px;
+}
+.hero{
+    background: linear-gradient(to right, #F9EBFF 100%, #8A8299 100%, #22123ECC 80%);
+    flex-shrink: 0;
+}
+.ann{
+    background: #fcf7ff;
+}
 @media (max-width: 768px) /*Mobile*/ {
     .search{
         display: none;
@@ -54,6 +71,16 @@
         padding: 20px;
         border-radius: 10px;
     }
+    .hero h1{
+        font-size: 40px;
+    }
+    .hero-img img{
+        width: 300px;
+        height: 330px;
+        justify-content: flex-end;
+        display: flex;
+    
+    }
 }
 
 @media (min-width: 769px) /*PC*/ {
@@ -62,5 +89,15 @@
     }
     .navbar-nav{
         margin: 0 auto;
+    }
+    .hero h1{
+        font-size: 56px;
+    }
+    .hero-img img{
+        width: 500px;
+        height: 400px;
+        justify-content: flex-end;
+        display: flex;
+    
     }
 }
