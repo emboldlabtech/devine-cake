@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    
+         <style>
+            .cat .control-btn button {
+                border: none;
+                border-radius: 100%;
+                background: #313033;
+            }
+            .cat .control-btn  {
+            position: relative;
+            width: 5em;
+            display: flex;
+            justify-content: space-between;
+        }
+        .cat{
+            position: relative;
+        }
+        .cat .cat-head{
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 5px;
+        }
+        .cat .card .card-content .btn{
+            width: 100%;
+            margin-top: 10px;
+            background: #5126AF;
+        }
+        .cat .card .card-content p{
+            font-size: 16px;
+        }
+        .cat .card .card-content div{
+            font-size: 24px;
+        }
+        .cat .card .card-content {
+            position: relative;
+            border-radius: 24px 24px 16px 16px;
+            background: rgba(0, 0, 0, 0.30);
+            backdrop-filter: blur(27.25px);
+            padding: 16px;
+            bottom: -194px;
+            color: #FFF;
+        }
+        .cat .cat-body .card { 
+            height: 350px;           
+            width: 18rem;
+            border-radius: 16px;
+        }
+        .cat .cat-body .card img{
+            position: absolute;
+            z-index: -1;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+        }
+         </style>
+        </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+        </header>
+        <main>
+            <div class="cat container mt-3" id="cat">
+                <div class="cat-head">
+                  <h2>Our Categories of Cakes</h2>
+                    <div class="control-btn">
+                        <button class="arrow-left swiper-navBtn" type="button" data-bs-slide="prev">
+                            <img src="/image/arrow-left.svg" alt="">
+                        </button>
+                        <button class="arrow-right swiper-navBtn" type="button" data-bs-slide="next">
+                            <img src="/image/arrow-right.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="slide-container swiper cat-body">
+                <div class="slide-content">
+                  <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="card-image">
+                        <img src="/image/cake.png" alt="">                        
+                      </div>
+                      <div class="card-content">
+                        <p>Saviour Chocolate Cake</p>
+                        <div>$100.00 - $150.00</div>
+                        <a  class="btn btn-primary" role="button">Make Request</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>                
+                <div class="swiper-pagination"></div>
+              </div>
+              </div>
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+
+         <!-- Swiper JS -->
+         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+         <!-- Bootstrap JavaScript Libraries -->
+          <script>
+            var swiper = new Swiper(".slide-content", {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    loop: true,
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor: 'true',
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".arrow-right",
+      prevEl: ".arrow-left",
+    },
+
+    breakpoints:{
+        0: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 2,
+        },
+        950: {
+            slidesPerView: 3,
+        },
+    },
+  });
+
+          </script>
+    </body>
+</html>
