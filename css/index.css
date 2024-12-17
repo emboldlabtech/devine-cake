@@ -198,6 +198,10 @@ h6 {
     background: #5126AF;
     color: #FFF;
 }
+.get2{
+    border-radius: 16px;
+    background: linear-gradient(180deg, #F23043 57.92%, #FF4C5D 64.78%, #990F1C 73.53%);
+}
 @media (max-width: 768px) /*Mobile*/ {
   .search {
     display: none;
@@ -230,6 +234,9 @@ h6 {
   }
   .offer2{
     line-height: -2;
+  }
+  .get2 img{
+    width: 340px;
   }
 }
 
