@@ -68,6 +68,14 @@ h6 {
     #22123ecc 80%
   );
   flex-shrink: 0;
+  position: relative;
+  z-index: -2;
+}
+.hero-bg{
+    width: 300px;
+    position: absolute;
+    bottom: 5px;
+    z-index: -1;
 }
 .ann {
   background: #fcf7ff;
@@ -388,13 +396,13 @@ h6 {
     line-height: -2;
   }
   .get2 img{
-    width: 340px;
+    width: 100%;
   }
   .test{
     margin-bottom: -40px;
  }
  .contact .ct1 img{
-    width: 300px;
+    width: 100%;
     margin-bottom: 20px;
  }
  .foot2 ul, .foot3 ul{
@@ -469,5 +477,10 @@ h6 {
     padding: 8px 0px;
     gap: 24px;
     align-self: stretch;
+ }
+ .hero-bg{
+    max-width: 160px;
+    height: 258.703px;
+    flex-shrink: 0;
  }
 }
