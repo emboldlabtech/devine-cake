@@ -21,11 +21,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-
+        
+        
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/tutorials/accordions/accordion-6/assets/css/accordion-6.css">
     </head>
     <body>
         <header>
@@ -260,13 +261,244 @@
                 
               </div>
 
-              
+              <div class="test">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center g-2">
+                        <div class="col-md-12" data-wow-delay="0.1s">
+                            <div class="carousel slide" data-bs-ride="carousel" id="quote-carousel">
+                                <!-- Bottom Carousel Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-bs-target="#quote-carousel" data-bs-slide-to="0">
+                                        <img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" alt="">
+                                    </li>
+                                    <li data-bs-target="#quote-carousel" data-bs-slide-to="1" class="active">
+                                        <img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/rssems/128.jpg" alt="">
+                                    </li>
+                                    <li data-bs-target="#quote-carousel" data-bs-slide-to="2">
+                                        <img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg" alt="">
+                                    </li>
+                                </ol>
+            
+                                <!-- Carousel Slides / Quotes -->
+                                <div class="carousel-inner text-center">
+                                    <!-- Quote 1 -->
+                                    <div class="carousel-item">
+                                        <blockquote>
+                                            <div class="row">
+                                                <div class="col-sm-8 col-lg-8 mx-auto">
+                                                    <p><img src="/image/quote-left.png" alt="quote"> Lorem ipsum dolor sit amet, consectetur adipiscing elit... <img src="/image/quote-right.png" alt="quote"></p>
+                                                    <strong>Someone famous</strong>
+                                                </div>
+                                            </div>
+                                        </blockquote>
+                                    </div>
+                                    <!-- Quote 2 -->
+                                    <div class="carousel-item active">
+                                        <blockquote>
+                                            <div class="row">
+                                                <div class="col-sm-8 col-lg-8 mx-auto">
+                                                    <p><img src="/image/quote-left.png" alt="quote"> I couldn’t be happier with my experience! The cake was not only stunning but tasted incredible—rich, fresh, and full of flavor. The team went above and beyond to capture my vision, and the ordering process was seamless. My guests are still raving about it! I’ll definitely be coming back for future celebrations.<img src="/image/quote-right.png" alt="quote"></p>
+                                                    <strong>Someone famous</strong>
+                                                </div>
+                                            </div>
+                                        </blockquote>
+                                    </div>
+                                    <!-- Quote 3 -->
+                                    <div class="carousel-item">
+                                        <blockquote>
+                                            <div class="row">
+                                                <div class="col-sm-8 col-lg-8 mx-auto">
+                                                    <p><img src="/image/quote-left.png" alt="quote"> Lorem ipsum dolor sit amet, consectetur adipiscing elit... <img src="/image/quote-right.png" alt="quote"></p>
+                                                    <strong>Someone famous</strong>
+                                                </div>
+                                            </div>
+                                        </blockquote>
+                                    </div>
+                                </div>
+            
+                                <!-- Carousel Buttons Next/Prev
+                                <a data-bs-slide="carousel-control-prev" href="#quote-carousel" class="left carousel-control">
+                                    <i class="fa fa-chevron-left"></i>
+                                </a>
+                                <a data-bs-slide="carousel-control-next" href="#quote-carousel" class="right carousel-control">
+                                    <i class="fa fa-chevron-right"></i>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
 
-        </main>
-        <footer>
-            <!-- place footer here -->
+              <div class="faq container">
+                <div class="faq-head text-center">
+                    <h2>Here are answers to some of your Lovely Questions</h2>
+                </div>
+                <div class="faq-body">
+                    <!-- Accordion 6 - Bootstrap Brain Component -->
+                    <section class="bsb-accordion-6 py-3 py-md-5 py-xl-8">
+                        <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                <p class="accordion-header">
+                                    <b class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="bi-apple me-2"></i>
+                                    What flavors and fillings do you offer?
+                                    </b>
+                                </p>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        We offer a wide variety of flavors, from classic vanilla and chocolate to unique options like red velvet, lemon, and salted caramel. You can also choose from a range of fillings, such as fresh fruit, buttercream, ganache, and more! Just let us know your preferences, and we’ll craft a cake you’ll love.
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="accordion-item">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <i class="bi-android2 me-2"></i>
+                                    Accordion Item #2
+                                    </button>
+                                </p>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="accordion-item">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="bi-microsoft me-2"></i>
+                                    Accordion Item #3
+                                    </button>
+                                </p>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="accordion-item">
+                                <p class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <i class="bi-microsoft me-2"></i>
+                                    Accordion Item #3
+                                    </button>
+                                </p>
+                                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+                </div>
+              </div>
+
+
+              <div class="contact">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center g-2">
+                        <div class="col-md ct1">
+                            <h2 class="mb-5">To make enquiry <br> Send us a message</h2>
+                            <img src="/image/contact.png" alt="">
+                        </div>
+                        <div class="col-md ct2">
+                            <form id="whatsappForm">
+                                <div class="mb-3">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        name="name"
+                                        id="name"
+                                        placeholder="Enter your name"
+                                        required
+                                    />
+                                </div>
+                                <div class="mb-3">
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        name="email"
+                                        id="email"
+                                        placeholder="Enter your email"
+                                        required
+                                    />
+                                </div>
+                                <div class="mb-3">
+                                    <textarea
+                                        class="form-control"
+                                        placeholder="Enter your message"
+                                        name="message"
+                                        id="message"
+                                        rows="3"
+                                        required
+                                    ></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-success">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                </div>
+              </div>
+
+            </main>
+            <footer class="footer">
+                <div class="foot1">
+                    <img src="/image/foot-logo.png" alt="">
+                    <h3>
+                        Delivery Exceptionally Delicious Cakes for your Taste Buds 
+                    </h3>
+                </div>
+                <div class="foot2">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Birthdays</a></li>
+                        <li><a href="#">Weddings</a></li>
+                        <li><a href="#">Anniversary</a></li>
+                        <li><a href="#">Offers</a></li>
+                        <li><a href="#">Express Delivery</a></li>
+                    </ul>
+                </div>
+                <div class="foot3">
+                    <ul>
+                        <li><img src="/image/phone.svg" alt="">+222 568 3038 290</li>
+                        <li><img src="/image/phone.svg" alt="">+222 568 3038 290</li>
+                        <li><img src="/image/mail.svg" alt="">devinecakes@gmail.com</li>
+                        <li><img src="/image/map.svg" alt="">devinecakes@gmail.com</li>
+                    </ul>
+                </div>
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
+        <script>
+            document.getElementById("whatsappForm").addEventListener("submit", function (e) {
+                e.preventDefault();
+    
+                const name = document.getElementById("name").value;
+                const email = document.getElementById("email").value;
+                const message = document.getElementById("message").value;
+    
+                
+                const phoneNumber = "2348107466823"; 
+    
+                
+                const whatsappMessage = `*Name:* ${name} *Email:* ${email} *Message:* ${message}`;
+    
+                const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
+                    whatsappMessage
+                )}`;
+    
+                window.open(whatsappURL, "_blank");
+            });
+        </script>
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -278,6 +510,8 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="/js/index.js"></script>
     </body>
