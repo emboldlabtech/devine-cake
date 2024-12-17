@@ -339,28 +339,19 @@ h6 {
 .foot2{
     background: var(--purple);
 }
-.foot2 ul a:hover{
-    color: #CACACA;
+.foot2 div a:hover{
+    color: #fff;
 }
-.foot2 ul a{
+.foot2 div .active a{
     text-decoration: none;
     color: #FFF;
 }
-.foot2 ul{
-    list-style-type: none;
+.foot2 div a{
+    text-decoration: none;
+    color: #CACACA;
 }
 .foot1{
-    padding: 50px 0px;
-}
-.foot3 ul a:hover{
-    color: #CACACA;
-}
-.foot3 ul a{
-    text-decoration: none;
-    color: #FFF;
-}
-.foot3 ul{
-    list-style-type: none;
+    padding: 40px 0px;
 }
 @media (max-width: 768px) /*Mobile*/ {
   .search {
@@ -404,9 +395,6 @@ h6 {
  .contact .ct1 img{
     width: 100%;
     margin-bottom: 20px;
- }
- .foot2 ul, .foot3 ul{
-    padding-right: 20px;
  }
  .foot2 {
     border-radius: 20px;
@@ -460,7 +448,7 @@ h6 {
     height: 379.733px;
     flex-shrink: 0;
  }
- .foot2 ul{
+ .foot2 div{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -469,7 +457,7 @@ h6 {
     gap: 24px;
     align-self: stretch;
  }
- .foot3 ul{
+ .foot3 div{
     display: flex;
     justify-content: center;
     align-items: center;
