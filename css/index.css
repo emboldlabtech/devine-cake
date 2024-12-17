@@ -202,6 +202,21 @@ h6 {
     border-radius: 16px;
     background: linear-gradient(180deg, #F23043 57.92%, #FF4C5D 64.78%, #990F1C 73.53%);
 }
+.get1 ul .num{
+    margin-right: 10px;
+    margin-left: -30px;
+    background: var(--purple);
+    color: #FFF;
+    width: 40px;
+    padding: 7px 13px;
+    border-radius: 85px;
+}
+.get1 ul li{
+    padding-bottom: 20px;
+}
+.get1 ul{
+    list-style-type: none;
+}
 @media (max-width: 768px) /*Mobile*/ {
   .search {
     display: none;
