@@ -163,6 +163,41 @@ h6 {
   height: 100%;
   object-fit: contain;
 }
+.offer2{
+    display: flex;
+}
+.offer1 h3{
+    font-size: 48px;
+}
+.offer1 .before del{
+    color: #E1DAF2;
+    font-size: 40px;
+    font-weight: bold;
+}
+.offer1 .before span{
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    top: -20px;
+}
+.offer1 .now .n1{
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    top: -50px;
+}
+.offer1 .now .n2{
+    font-size: 86px;
+    font-weight: bold;
+}
+.offer1{
+    padding: 20px;
+}
+.offer-body{
+    border-radius: 16px;
+    background: #5126AF;
+    color: #FFF;
+}
 @media (max-width: 768px) /*Mobile*/ {
   .search {
     display: none;
@@ -181,6 +216,21 @@ h6 {
     justify-content: flex-end;
     display: flex;
   }
+  .offer2 .f1{
+    width: 290px;
+    height: 400;
+    flex-shrink: 0;
+    margin-right: -100px;
+    margin-left: 5px;
+}
+  .offer2 .f2{
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+  }
+  .offer2{
+    line-height: -2;
+  }
 }
 
 @media (min-width: 769px) /*PC*/ {
@@ -198,5 +248,23 @@ h6 {
     height: 400px;
     justify-content: flex-end;
     display: flex;
+  }
+  .offer1 {
+    margin-left: 30px;
+  }
+  .offer2 {
+    margin-right: -150px;
+  }
+  .offer2 .f1{
+    width: 346px;
+    height: 400px;
+    flex-shrink: 0;
+    margin-left: 100px;
+}
+.offer2 .f2{
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+    margin-left: -100px;
   }
 }
