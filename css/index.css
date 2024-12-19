@@ -1,5 +1,26 @@
 :root {
-  --purple: #5126af;
+    --purple: #5126AF;
+    --purple-light: #bfaaeb;
+    --magentar:rgb(236, 12, 94);
+    --magentar-dark:rgb(192, 3, 82);
+    --light-magentar:rgba(255, 191, 214, 1);
+    --Anniversary-main-color:#581259;
+    --Anniversary-second:#581259c4;
+    --Anniversary-bg:#FEC4FF;
+    --Anniversary-btn:#E345E5;
+    --Birthday-main-color:#4A1000;
+    --Birthday-bg:#ffdca7;
+    --Birthday-btn:#F46036;
+    --transition-1: 0.5s ease-in-out;
+    --Green-main-color:#084d2B;
+    --Green-second-color:#084d2bd0;
+    --Green-bg-color:#b2FFDA;
+    --Express-main-color:#66290A;
+    --Express-second-color:#66290ada;
+    --Express-bg-color:#FFBB99;
+    --Express-btn-bg-color:#995C3D;
+    --footer-background:lineargradient(to right, #c800ff, white, #ff9100);
+
 }
 * {
   margin: 0;
@@ -77,6 +98,7 @@ h6 {
     bottom: 5px;
     z-index: -1;
 }
+
 .ann {
   background: #fcf7ff;
 }
@@ -331,7 +353,7 @@ h6 {
 }
 .footer{
    text-align: center;
-   background: linear-gradient( to right, #f9ebff 100%, #8a8299 100%, #22123ecc 80% );
+   background: linear-gradient( to right, #f9ebff 100%, #fafafa 100%, #f8981b9f);
    margin-top: 30px;
    padding-top: 30px;
    margin-bottom: -15px;
@@ -353,6 +375,11 @@ h6 {
 .foot1{
     padding: 40px 0px;
 }
+
+
+
+
+
 @media (max-width: 768px) /*Mobile*/ {
   .search {
     display: none;
