@@ -1,0 +1,82 @@
+@keyframes Hero_Animation {
+    from{
+        opacity: 0;
+    };
+
+    to{
+
+        opacity: 1;
+
+    };
+    
+}
+
+
+
+/* Hidden Products Cards */
+
+/* Smooth appearance for revealed cards */
+/* Smooth appearance for revealed cards */
+.products-cards.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.products-cards.hidden.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+/* Hidden Products Cards */
+
+/* Base styles for hidden elements */
+.hidden {
+    opacity: 0; /* Start invisible */
+    transform: translateY(50px) scale(0.95); /* Downward motion and slight shrink */
+    transition: 
+        opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), /* Smooth fade effect */
+        transform 0.8s cubic-bezier(0.25, 1, 0.5, 1); /* Smooth movement and scale */
+    will-change: opacity, transform; /* Optimize performance */
+}
+
+/* Shown state styles */
+/* Initial hidden state */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px); /* Cards will start slightly lower */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Show state with animation */
+.hidden.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Carousel of Carts from here */
+@keyframes Carousel_From_Left {
+    0%{
+       transform:translateX(
+        0
+       )
+
+    };
+
+  100%{
+
+    transform:translateX(
+        calc(
+            -250px * 5 )
+       );
+
+
+  }
+    
+}
+
+
+
+

@@ -1,0 +1,306 @@
+
+.carousel-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height:100vh;
+  margin-top:-60px;
+  padding:0px;
+}
+
+.carousel-container-head-text{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  max-width:1100px;
+  width:100%;
+  margin: 0px 40px 30px;
+}
+
+
+.carousel-container-head-text .carousel-arrow{
+  display:flex;
+  width:15%;
+  justify-content: end;
+}
+
+.arrow{
+  cursor:pointer;
+  background:rgb(197, 192, 192);
+  color:rgb(0, 0, 0);
+  font-family: "poppins";
+  font-size:1.25rem;
+  margin:5px;
+  border-radius:50%;
+  text-align:center;
+  height:30px;
+  width:30px;
+  line-height:30px;
+  transition:var(--transition-1);
+}
+
+.arrow:hover{
+  background: rgb(0, 0, 0);
+  color:rgb(197, 192, 192);
+}
+
+
+.wrapper {
+  margin: 0px 80px 30px;
+  place-items:center;
+  position:relative;
+  overflow: hidden;
+}
+
+.wrapper .carousel{
+  display:grid;
+  grid-auto-flow:column;
+  grid-auto-columns: calc((100% / 2) - 12px);
+  gap:15px;
+}
+
+.carousel{
+  display:flex;
+  transition: transform 0.5s ease; /* Smooth transition for scrolling */
+}
+.carousel .card{
+  width:100%;
+  height: 342px;
+  list-style:none;
+  background:rgb(255, 228, 228);
+  border-radius:8px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  cursor:pointer;
+  transition: var(--transition-1);
+}
+
+.card{
+  overflow:hidden;
+  position:relative;
+  display:flex;
+  align-items: center;
+}
+
+
+.card .img img{
+  width:100%;
+  object-fit:cover;
+  object-position:center;
+  transition: var(--transition-1);
+  
+}
+
+.card .img:hover img{
+  scale:1.1;
+  object-position:bottom;
+}
+
+
+/* Fading effect 
+
+.wrapper::before,
+.wrapper::after {
+  background:linear-gradient(to right, rgba(255,255,255,1)0%,
+  rgba(255,255,255,0)100%);
+  content:'';
+  height:100%;
+  position:absolute;
+  width:15%;
+  z-index:5;
+ 
+
+}
+
+.wrapper::before {
+    left:0;
+    top:0;
+}
+
+.wrapper::after {
+right:0;
+top:0;
+transform:rotateZ(180deg);
+}
+
+*/
+
+.card-text:before{
+  content:'';
+  position:absolute;
+  top:10%;
+  bottom:0;
+  left:0;
+  right:0;
+  background:linear-gradient(90deg, black, rgb(51, 45, 45), black);
+  opacity:0.8;
+  z-index:-1;
+  filter: blur(5px);
+}
+
+
+.card-text{
+ position:absolute;
+ z-index:1;
+ bottom:0;
+ left:0;
+ right:0;
+ display:flex;
+ align-items: center;
+ justify-content: center;
+ max-width:100%;
+ padding:0px 15px;
+}
+
+
+.card-text-left{
+  width:40%;
+  color:white;
+  text-align:left;
+  margin-left:30px;
+}
+
+.card-text-left h5, .card-text-left h2{
+  font-family: "Poppins";
+}
+
+.card-text-right{
+  width:60%;
+  margin-right:30px;
+}
+
+
+.arrow-btn{
+  display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius:100px;
+    margin:30px auto;
+    text-decoration:none;
+    background:var(--purple);
+    color:white;
+    font-size: 17px;
+    transition:var(--transition-1);
+}
+
+.arrow-btn:hover{
+  color:var(--purple);
+  background:var(--purple-light);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) /*Mobile*/ {
+  
+
+  .carousel-container-head-text{
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    max-width:80%;
+    width:100%;
+    margin:0px 0px 20px 40px;
+  }
+  
+  
+  .carousel-container-head-text .products-head-text h1{
+  font-size:40px;
+}
+
+
+  .carousel-container-head-text .carousel-arrow{
+    width:100%;
+    justify-content: center;
+  }
+  
+  .arrow{
+    font-size:2rem;
+    margin:5px;
+    height:40px;
+    width:40px;
+    line-height:40px;
+  }
+
+
+
+
+  .wrapper .carousel{
+    grid-auto-columns: calc((100%));
+}
+
+.wrapper {
+  margin: 0px 30px 30px;
+
+}
+
+
+.card-text{
+ flex-direction:column;
+  padding: 0px;
+ }
+ 
+ 
+ .card-text-left{
+   width:100%;
+   text-align:center;
+   margin:20px 0px -20px 0px;
+ }
+ 
+
+ .card-text-right{
+   width:100%;
+ }
+ 
+ 
+ .card .img img{
+  width:100vw;
+}
+
+ .arrow-btn{
+   display:flex;
+     flex-direction:column;
+     justify-content: center;
+     align-items: center;
+     padding: 10px;
+     border-radius:100px;
+     margin:30px auto;
+     text-decoration:none;
+     background:var(--purple);
+     color:white;
+     font-size: 17px;
+     transition:var(--transition-1);
+ }
+ 
+ .arrow-btn:hover{
+   color:var(--purple);
+   background:var(--purple-light);
+ }
+
+
+
+ .card-text:before{
+  top:5px;
+}
+
+
+
+
+
+}
