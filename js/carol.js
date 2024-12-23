@@ -50,32 +50,25 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Event listener to toggle between showing and hiding additional cards
+    // Event listener to show additional cards and hide the button when all are shown
     btnMore.addEventListener("click", (e) => {
         e.preventDefault();
 
         const hiddenCards = Array.from(productCards).filter(
-            (card, index) => index >= initialVisible && card.style.display === "none"
+            (card) => card.style.display === "none"
         );
 
-        if (hiddenCards.length > 0) {
-            // If there are hidden cards, show them
-            productCards.forEach((card) => {
-                card.style.display = "block"; // Show hidden cards
-                card.classList.add("hidden"); // Reapply hidden class for scroll effects
-            });
-            btnMore.innerHTML = "Show Default Cards"; // Change button text to "Hide Few"
-        } else {
-            // If all cards are shown, hide some
-            productCards.forEach((card, index) => {
-                if (index >= initialVisible) {
-                    card.style.display = "none"; // Hide the card
-                }
-            });
-            btnMore.innerHTML = "Show More"; // Change button text back to "Show More"
+        hiddenCards.forEach((card) => {
+            card.style.display = "block"; // Show hidden cards
+        });
+
+        // Hide the button if no more hidden cards remain
+        if (hiddenCards.length === 0) {
+            btnMore.style.display = "none";
         }
     });
 });
+
 
 
 

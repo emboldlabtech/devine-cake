@@ -55,20 +55,19 @@
 .wrapper .carousel{
   display:grid;
   grid-auto-flow:column;
-  grid-auto-columns: calc((100% / 2) - 12px);
+  grid-auto-columns: calc((100% / 2) - 18px);
   gap:15px;
 }
 
 .carousel{
   display:flex;
-  transition: transform 0.5s ease; /* Smooth transition for scrolling */
+  transition: transform 0.8s ease; /* Smooth transition for scrolling */
 }
 .carousel .card{
   width:100%;
-  height: 342px;
+  height: 350px;
   list-style:none;
-  background:rgb(255, 228, 228);
-  border-radius:8px;
+  border-radius:20px;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -87,45 +86,16 @@
 
 .card .img img{
   width:100%;
-  object-fit:cover;
-  object-position:center;
+  height: 350px;
   transition: var(--transition-1);
   
 }
 
 .card .img:hover img{
+  object-position:left;
+  opacity:.8;
   scale:1.1;
-  object-position:bottom;
 }
-
-
-/* Fading effect 
-
-.wrapper::before,
-.wrapper::after {
-  background:linear-gradient(to right, rgba(255,255,255,1)0%,
-  rgba(255,255,255,0)100%);
-  content:'';
-  height:100%;
-  position:absolute;
-  width:15%;
-  z-index:5;
- 
-
-}
-
-.wrapper::before {
-    left:0;
-    top:0;
-}
-
-.wrapper::after {
-right:0;
-top:0;
-transform:rotateZ(180deg);
-}
-
-*/
 
 .card-text:before{
   content:'';
@@ -134,10 +104,9 @@ transform:rotateZ(180deg);
   bottom:0;
   left:0;
   right:0;
-  background:linear-gradient(90deg, black, rgb(51, 45, 45), black);
-  opacity:0.8;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(27.25px);
   z-index:-1;
-  filter: blur(5px);
 }
 
 
@@ -156,7 +125,7 @@ transform:rotateZ(180deg);
 
 
 .card-text-left{
-  width:40%;
+  width:50%;
   color:white;
   text-align:left;
   margin-left:30px;
@@ -166,8 +135,17 @@ transform:rotateZ(180deg);
   font-family: "Poppins";
 }
 
+.card-text-left h2{
+  font-size:1.3rem;
+}
+
+.card-text-left h5{
+  font-size: 1rem;
+  font-weight:400;
+}
+
 .card-text-right{
-  width:60%;
+  width:50%;
   margin-right:30px;
 }
 
@@ -239,10 +217,33 @@ transform:rotateZ(180deg);
   }
 
 
+  .carousel .card{
+    width:100%;
+    height: 350px;
+    border-radius:15px;
+  }
 
+
+
+  .card-text-left{
+    display:flex;
+    width:70%;
+    align-items: center;
+    justify-content: space-between;
+    text-align:center;
+    margin-left:0px;
+  }
 
   .wrapper .carousel{
-    grid-auto-columns: calc((100%));
+    grid-auto-columns: calc(100% - 2%);
+}
+
+.card-text-left h5{
+  margin-left: 40px;
+}
+
+.card-text-left h2{
+  margin-right: 50px;
 }
 
 .wrapper {
@@ -265,13 +266,15 @@ transform:rotateZ(180deg);
  
 
  .card-text-right{
-   width:100%;
+   width:70%;
+   margin-bottom:-20px;
  }
  
+ .card{
+  max-width:100vw;
+ }
+
  
- .card .img img{
-  width:100vw;
-}
 
  .arrow-btn{
    display:flex;
@@ -298,6 +301,20 @@ transform:rotateZ(180deg);
  .card-text:before{
   top:5px;
 }
+
+.card .img img{
+  object-position:center;
+  width:100%;
+  height: 350px;
+  transition: var(--transition-1);
+  
+}
+
+.card .img:hover img{
+  object-position:left;
+}
+
+
 
 
 

@@ -19,7 +19,7 @@
     --Express-second-color:#66290ada;
     --Express-bg-color:#FFBB99;
     --Express-btn-bg-color:#995C3D;
-    --footer-background:lineargradient(to right, #c800ff, white, #ff9100);
+    --footer-background:linear-gradient(to right, #f3c6ff, white, #ffce8f);
 
 }
 * {
@@ -73,19 +73,13 @@ h6 {
   width: 50px;
   height: 60px;
 }
-.hero a:hover {
-  box-shadow: -1px 1px 1px var(--purple);
-}
-.hero a {
+.hero button {
   background: var(--purple);
   color: #ffffff;
   box-shadow: -4px 4px 1px var(--purple);
   border: 1px solid black;
   padding: 10px 24px;
   border-radius: 4px;
-  text-decoration: none;
-  cursor: pointer;
-  z-index: 30;
 }
 .hero {
   background: linear-gradient(
@@ -96,24 +90,24 @@ h6 {
   );
   flex-shrink: 0;
   position: relative;
+  z-index: -2;
 }
 .hero-bg{
     width: 300px;
     position: absolute;
     bottom: 5px;
+    z-index: -1;
 }
-.hero .col-md-6 {
-  z-index: 2;
-}
+
 .ann {
   background: #fcf7ff;
 }
-.control-btn button {
+.cat .control-btn button {
   border: none;
   border-radius: 100%;
   background: #313033;
 }
-.control-btn {
+.cat .control-btn {
   position: relative;
   width: 5em;
   display: flex;
@@ -127,16 +121,12 @@ h6 {
   justify-content: space-between;
   margin: 10px 5px;
 }
-.cat .card .card-content .btn:hover {
-  transform: scale(1.1);
-}
 .cat .card .card-content .btn {
   width: 100%;
   margin-top: 10px;
   background: #6D36DF;
   color: #fff;
   border-radius: 100px;
-  transition: var(--transition-1);
 }
 .cat .card .card-content p {
   font-size: 16px;
@@ -152,18 +142,11 @@ h6 {
   padding: 16px;
   bottom: -194px;
   color: #fff;
-  width: 100%;
 }
 .cat .cat-body .card {
   height: 350px;
   width: 18rem;
   border-radius: 16px;
-  object-fit: contain;
-  overflow: hidden;
-  background-color: transparent;
-}
-.cat .cat-body .card:hover img{
-  transform:scale(1.1);
 }
 .cat .cat-body .card img {
   position: absolute;
@@ -174,10 +157,15 @@ h6 {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  transition: var(--transition-1);
 }
 
 
+.cat1 .control-btn {
+  position: relative;
+  width: 5em;
+  display: flex;
+  justify-content: space-between;
+}
 .cat1 {
   position: relative;
 }
@@ -190,8 +178,6 @@ h6 {
   height: 310px;
   width: 18rem;
   border-radius: 16px;
-  background-color: transparent;
-  overflow: hidden;
 }
 .cat1 .cat-body .card-image h3 {
     z-index: 3;
@@ -199,17 +185,13 @@ h6 {
     left: 20px;
     position: absolute;
 }
-.cat1 .cat-body .card:hover img{
-  transform:scale(1.1);
-}
 .cat1 .cat-body .card img {
   position: absolute;
   z-index: -15;
   text-align: center;
   width: 100%;
   height: 100%;
-  transition: var(--transition-1);
-  object-fit: cover;
+  object-fit: contain;
 }
 .offer2{
     display: flex;
@@ -288,14 +270,9 @@ h6 {
     bottom: auto;
     position: relative;
 }
-.test #quote-carousel .carousel-indicators li img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures images fit the container */
-}
 .test #quote-carousel .carousel-indicators li {
     width: 80px;
-    height: 70px;
+    height: 50px;
     margin: 5px;
     cursor: pointer;
     border: 4px solid #CCC;
@@ -305,13 +282,13 @@ h6 {
     transition: all 0.4s;
 }
 .test #quote-carousel .carousel-indicators .active {
+    background: #333333;
     width: 120px;
     height: 100px;
     border-radius: 50%;
     border-color: #f33;
     opacity: 1;
 }
-
 .test .carousel-inner {
     min-height: 300px;
 }
@@ -376,7 +353,8 @@ h6 {
 }
 .footer{
    text-align: center;
-   background: linear-gradient( to right, #f9ebff 100%, #fafafa 100%, #f8981b9f);
+   /*background: linear-gradient( to right, #f9ebff 100%, #fafafa 100%, #f8981b9f);*/
+   background:var(--footer-background);
    margin-top: 30px;
    padding-top: 30px;
    margin-bottom: -15px;
@@ -398,9 +376,7 @@ h6 {
 .foot1{
     padding: 40px 0px;
 }
-.cat-head h2{
-  color: #22123E;
-}
+
 
 
 
@@ -419,10 +395,9 @@ h6 {
   }
   .hero-img img {
     width: 100%;
-    height: 100%;
+    height: 330px;
     justify-content: flex-end;
     display: flex;
-    z-index: 2;
   }
   .offer2 .f1{
     width: 290px;
@@ -463,13 +438,6 @@ h6 {
     gap: 24px;
     align-self: stretch;
  }
- .cat-head {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 10px 5px;
-}
 }
 
 @media (min-width: 769px) /*PC*/ {
