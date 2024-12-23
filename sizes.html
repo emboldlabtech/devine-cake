@@ -1,429 +1,395 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Devine Cake</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-        <link rel="stylesheet" href="/css/index.css">
-        <link rel="stylesheet" href="/css/carol.css">
-        <link rel="stylesheet" href="/css/otherpage.css">
-        <link rel="stylesheet" href="/css/animation.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <head>
+    <title>Devine Cake</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/carol.css" />
+    <link rel="stylesheet" href="/css/otherpage.css" />
+    <link rel="stylesheet" href="/css/animation.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    </head>
-    <body>
-
-<!--=====================================================================
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--=====================================================================
 =============================================================================
 HEADING MENU SECTION 
 =====================================================================
 =============================================================================
 -->
 
-        <header>
-            <div class="heading container mt-2">
-                <div>
-                    <button
-                            class="navbar-toggler d-lg-none"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapsibleNavId"
-                            aria-controls="collapsibleNavId"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation"
-                        >
-                        <img src="/image/menu.svg" alt="">
-                    </button>
-                    <a href="/"><img src="/image/logo.png" loading="lazy" alt="logo"></a>
-                </div>
+    <header>
+      <div class="heading container mt-2">
+        <div>
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img src="/image/menu.svg" alt="" />
+          </button>
+          <a href="/"
+            ><img src="/image/logo.png" loading="lazy" alt="logo"
+          /></a>
+        </div>
 
-                <div class="head2 mt-3">
-                    <form action="#">
-                        <div class="search">
-                            <img src="/image/search.svg" alt="search">
-                            <input type="search" placeholder="Search for Cakes" name="" id="">
-                        </div>
-                    </form>
-                    <div>
-                        <img src="/image/favourite.svg" alt="favourite">
-                        <img src="/image/shopping.svg" alt="shopping">
-                        <img src="/image/user.svg" alt="user">
-                    </div>
-                </div>
+        <div class="head2 mt-3">
+          <form action="#">
+            <div class="search">
+              <img src="/image/search.svg" alt="search" />
+              <input
+                type="search"
+                placeholder="Search for Cakes"
+                name=""
+                id=""
+              />
             </div>
-            <nav
-                class="navbar navbar-expand-sm navbar-light"
-            >
-                <div class="container">
-                    <div class="collapse navbar-collapse" id="collapsibleNavId">
-                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link actives" href="index.html" aria-current="page"
-                                    >Home
-                                    <span class="visually-hidden">(current)</span></a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="birthday.html">Birthdays</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="wedding.html">Weddings</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="anniversary.html">Anniversary</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="sizes.html">Offers</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="express.html">Express Delivery</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
+          </form>
+          <div>
+            <img src="/image/favourite.svg" alt="favourite" />
+            <img src="/image/shopping.svg" alt="shopping" />
+            <img src="/image/user.svg" alt="user" />
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container">
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="index.html"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="birthday.html">Birthdays</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="wedding.html">Weddings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="anniversary.html">Anniversary</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link actives" href="sizes.html">Offers <span class="visually-hidden">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="express.html">Express Delivery</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-
-
-<!--=====================================================================
+    <!--=====================================================================
 =============================================================================
 MAIN DESIGN START HERE 
 =====================================================================
 =============================================================================
 -->
 
+    <main>
+      <div class="wedding-hero-container" id="sizes-hero-container">
+        <div class="wedding-hero-content">
+          <div class="wedding-hero-left" id="sizes-text">
+            <h1>
+              Enjoy More Of The Best With <br />
+              Bigger Sizes And More Layers
+            </h1>
+            <p>
+              "Why settle for just a slice when you can have layers upon layers
+              of pure indulgence? Our bigger cakes are crafted to bring you even
+              more of the flavors you love, with extra layers for that perfect
+              bite every time. Perfect for sharing (or savoring all to
+              yourself)—go big, and enjoy the best in every layer
+            </p>
 
-
-        <main>
-
-<div class="wedding-hero-container" id="sizes-hero-container">
-
-
-            <div class="wedding-hero-content">
-                <div class="wedding-hero-left" id="sizes-text">
-
-                    <h1> Enjoy more of the best with <br> bigger Sizes and more Layers</h1>
-                    <p>"Why settle for just a slice when you can have layers upon layers of pure indulgence? 
-                        Our bigger cakes are crafted to bring you even more of the flavors you love, with 
-                        extra layers for that perfect bite every time. Perfect for sharing (or savoring all to 
-                        yourself)—go big, and enjoy the best in every layer</p>
-
-                         <div class="wedding-btn-box" id="sizes-btn-box">
-                            <a href="#" class="wedding-hero-btn">Explore Your Taste </a>
-                         </div>   
-
-
-                </div>
-            <div class="wedding-hero-right">
-                <img src="/image/cake.webp" alt="">
+            <div class="wedding-btn-box" id="sizes-btn-box">
+              <a href="#" class="wedding-hero-btn">Explore Your Taste </a>
             </div>
+          </div>
+          <div class="wedding-hero-right">
+            <img src="/image/cake.webp" alt="" />
+          </div>
+        </div>
 
+        <div class="wedding-hero-down-image">
+          <img src="/image/background.png" alt="background" />
+        </div>
+      </div>
 
+      <section>
+        <div class="products-head-text">
+          <h1 id="sizes-product-text">Single Layers Cake</h1>
+        </div>
+
+        <div class="products-container">
+          <!--Card 1 -->
+
+          <div class="products-cards hidden">
+            <div class="image">
+              <img
+                src="/image/products_images/12 inch cake.webp"
+                alt="Product Image 1"
+              />
             </div>
-
-
-<div class="wedding-hero-down-image">
-    <img src="/image/background.png" alt="background">
-</div>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-            <section>
-
-                <div class="products-head-text">
-                   <h1 id="sizes-product-text">
-                    Single Layers Cake
-                   </h1>
-                </div>
-
-
-
-
-                <div class="products-container">
-
-                        
-                    <!--Card 1 -->
-    
-                    <div class="products-cards hidden">
-    
-                        <div class="image"><img src="/image/products_images/12 inch cake.webp" alt="Product Image 1"></div>
-                        <figcaption>
-                            <p>8 Inches Vanilla Cake</p>
-                            <h3>800GHc</h3>
-                        </figcaption>
-                        <a href="#">Order Now</a>
-                    
-                    </div>
-                    
-                    
-    
-    
-    
-    
-    
-                            
-                    <!--Card 2 -->
-    
-    <div class="products-cards hidden">
-    
-        <div class="image"><img src="/image/products_images/10 Inch Vanilla Wedding Cake.webp" alt="Product Image 1"></div>
-        <figcaption>
-            <p>10 Inches Vanilla Cake</p>
-            <h3>1,200GHc</h3>
-        </figcaption>
-        <a href="#">Order Now</a>
-    
-    </div>
-    
-    
-         <!--Card 3 -->
-    
-     <div class="products-cards hidden">
-    
-            <div class="image"><img src="/image/products_images/12 Inch Vanilla Wedding Cake.webp" alt="Product Image 1"></div>
             <figcaption>
-                <p>12 inches Vanilla Cakes</p>
-                <h3>1,600GHc</h3>
+              <p>8 Inches Vanilla Cake</p>
+              <h3>800GHc</h3>
             </figcaption>
             <a href="#">Order Now</a>
-    
-    </div>
-    
-    
-    
-    
-    
-    
-    
-    
-      <!--Card 4 -->
-    
-      <div class="products-cards hidden large">
-    
-        <div class="image"><img src="/image/products_images/8 inch Chocolate Wedding Cake.webp" alt="Product Image 1"></div>
-        <figcaption>
-            <p>8 Inches Chocolate Cake</p>
-            <h3>1,000GHc</h3>
-        </figcaption>
-        <a href="#">Order Now</a>
-    
-    </div>
-    
-    
-         <!--Card 5 -->
-    
-    <div class="products-cards hidden large">
-    
-        <div class="image"><img src="/image/products_images/8 inch Cake.webp" alt="Product Image 1"></div>
-        <figcaption>
-            <p>10 Inches Chocolate Cake</p>
-            <h3>1,600GHc</h3>
-        </figcaption>
-        <a href="#">Order Now</a>
-    
-    </div>
-    
-         <!--Card 6 -->
-    
-         <div class="products-cards hidden">
-    
-            <div class="image"><img src="/image/products_images/naked chocolate.webp" alt="Product Image 1"></div>
+          </div>
+
+          <!--Card 2 -->
+
+          <div class="products-cards hidden">
+            <div class="image">
+              <img
+                src="/image/products_images/10 Inch Vanilla Wedding Cake.webp"
+                alt="Product Image 1"
+              />
+            </div>
             <figcaption>
-                <p>12 Inches Chocolate Cake</p>
-            <h3>2,000GHc</h3>
+              <p>10 Inches Vanilla Cake</p>
+              <h3>1,200GHc</h3>
             </figcaption>
             <a href="#">Order Now</a>
-    
-    </div>
-    
-    
-    
-    
-      <!--Card 7 -->
-    
-      <div class="products-cards hidden large" >
-    
-        <div class="image"><img src="/image/products_images/reimagine.webp" alt="Product Image 1"></div>
-        <figcaption>
-            <p>8 Inches Red Velvet Cake</p>
-            <h3>1,000GHc</h3>
-        </figcaption>
-        <a href="#">Order Now</a>
-    
-    </div>
-    
-    
-         <!--Card 8 -->
-    
-    <div class="products-cards hidden">
-    
-        <div class="image"><img src="/image/wedding/wedding-2.webp" alt="Product Image 1"></div>
-        <figcaption>
-            <p>10 Inches Red Velvet Cake</p>
-            <h3>1,600GHc</h3>
-        </figcaption>
-        <a href="#">Order Now</a>
-    
-    </div>
-    
-         <!--Card 9 -->
-    
-         <div class="products-cards hidden large">
-    
-            <div class="image"><img src="/image/products_images/Novelty Cake.webp" alt="Product Image 1"></div>
+          </div>
+
+          <!--Card 3 -->
+
+          <div class="products-cards hidden">
+            <div class="image">
+              <img
+                src="/image/products_images/12 Inch Vanilla Wedding Cake.webp"
+                alt="Product Image 1"
+              />
+            </div>
             <figcaption>
-                <p>12 Inches Red Velvet Cake</p>
-            <h3>2,000GHc</h3>
+              <p>12 inches Vanilla Cakes</p>
+              <h3>1,600GHc</h3>
             </figcaption>
             <a href="#">Order Now</a>
-    
-                </div>
+          </div>
 
+          <!--Card 4 -->
 
-    
-         <!--Card 10 -->
-    
-         <div class="products-cards hidden large">
-    
-            <div class="image"><img src="/image/products_images/Scones.webp" alt="Product Image 1"></div>
+          <div class="products-cards hidden large">
+            <div class="image">
+              <img
+                src="/image/products_images/8 inch Chocolate Wedding Cake.webp"
+                alt="Product Image 1"
+              />
+            </div>
             <figcaption>
-                <p>Apple & Banana Bread</p>
-            <h3>20GHc</h3>
+              <p>8 Inches Chocolate Cake</p>
+              <h3>1,000GHc</h3>
             </figcaption>
             <a href="#">Order Now</a>
-    
-                </div>
+          </div>
 
+          <!--Card 5 -->
 
-
-    
-         <!--Card 11 -->
-    
-         <div class="products-cards hidden large">
-    
-            <div class="image"><img src="/image/products_images/glazed-doughnuts.webp" alt="Product Image 1"></div>
+          <div class="products-cards hidden large">
+            <div class="image">
+              <img
+                src="/image/products_images/8 inch Cake.webp"
+                alt="Product Image 1"
+              />
+            </div>
             <figcaption>
-                <p>60 pieces of Doughnuts </p>
-            <h3>100GHc</h3>
+              <p>10 Inches Chocolate Cake</p>
+              <h3>1,600GHc</h3>
             </figcaption>
             <a href="#">Order Now</a>
-    
-                </div>
+          </div>
 
+          <!--Card 6 -->
 
-
-
-    
-         <!--Card 12 -->
-    
-         <div class="products-cards hidden large">
-    
-            <div class="image"><img src="/image/products_images/length_pie.webp" alt="Product Image 1"></div>
+          <div class="products-cards hidden">
+            <div class="image">
+              <img
+                src="/image/products_images/naked chocolate.webp"
+                alt="Product Image 1"
+              />
+            </div>
             <figcaption>
-                <p>Lentil Pie (vegetarian) - 50pieces </p>
-            <h3>250GHc</h3>
+              <p>12 Inches Chocolate Cake</p>
+              <h3>2,000GHc</h3>
             </figcaption>
             <a href="#">Order Now</a>
-    
-                </div>
+          </div>
 
+          <!--Card 7 -->
 
+          <div class="products-cards hidden large">
+            <div class="image">
+              <img
+                src="/image/products_images/reimagine.webp"
+                alt="Product Image 1"
+              />
+            </div>
+            <figcaption>
+              <p>8 Inches Red Velvet Cake</p>
+              <h3>1,000GHc</h3>
+            </figcaption>
+            <a href="#">Order Now</a>
+          </div>
 
+          <!--Card 8 -->
 
+          <div class="products-cards hidden">
+            <div class="image">
+              <img src="/image/wedding/wedding-2.webp" alt="Product Image 1" />
+            </div>
+            <figcaption>
+              <p>10 Inches Red Velvet Cake</p>
+              <h3>1,600GHc</h3>
+            </figcaption>
+            <a href="#">Order Now</a>
+          </div>
 
+          <!--Card 9 -->
 
-    
-</div>
-    
+          <div class="products-cards hidden large">
+            <div class="image">
+              <img
+                src="/image/products_images/Novelty Cake.webp"
+                alt="Product Image 1"
+              />
+            </div>
+            <figcaption>
+              <p>12 Inches Red Velvet Cake</p>
+              <h3>2,000GHc</h3>
+            </figcaption>
+            <a href="#">Order Now</a>
+          </div>
+
+          <!--Card 10 -->
+
+          <div class="products-cards hidden large">
+            <div class="image">
+              <img
+                src="/image/products_images/Scones.webp"
+                alt="Product Image 1"
+              />
+            </div>
+            <figcaption>
+              <p>Apple & Banana Bread</p>
+              <h3>20GHc</h3>
+            </figcaption>
+            <a href="#">Order Now</a>
+          </div>
+
+          <!--Card 11 -->
+
+          <div class="products-cards hidden large">
+            <div class="image">
+              <img
+                src="/image/products_images/glazed-doughnuts.webp"
+                alt="Product Image 1"
+              />
+            </div>
+            <figcaption>
+              <p>60 pieces of Doughnuts</p>
+              <h3>100GHc</h3>
+            </figcaption>
+            <a href="#">Order Now</a>
+          </div>
+
+          <!--Card 12 -->
+
+          <div class="products-cards hidden large">
+            <div class="image">
+              <img
+                src="/image/products_images/length_pie.webp"
+                alt="Product Image 1"
+              />
+            </div>
+            <figcaption>
+              <p>Lentil Pie (vegetarian) - 50pieces</p>
+              <h3>250GHc</h3>
+            </figcaption>
+            <a href="#">Order Now</a>
+          </div>
+        </div>
+
         <a href="#" class="btn-More">Show More</a>
+      </section>
+    </main>
 
-
-
-
-    </section>
-
-  
-
-
-
-
-        </main>
-
-
-
-
-
-
-        <footer class="footer">
-            <div class="foot1">
-                <img src="/image/foot-logo.png" alt="">
-                <h3>
-                    Delivering Exceptionally Delicious Cakes for your Taste Buds 
-                </h3>
-            </div>
-            <div class="foot2">
-                <div>
-                    <span class="active"><a href="index.html">Home</a></span>
-                    <span><a href="birthday.html">Birthdays</a></span>
-                    <span><a href="wedding.html">Weddings</a></span>
-                    <span><a href="anniversary.html">Anniversary</a></span>
-                    <span><a href="sizes.html">Offers</a></span>
-                    <span><a href="express.html">Express Delivery</a></span>
-                </div>
-            </div>
-            <div class="foot3">
-                <div>
-                    <div><img src="/image/phone.svg" alt="">+2225683038290</div>
-                    <div><img src="/image/phone.svg" alt="">+2225683038290</div>
-                    <div><img src="/image/mail.svg" alt="">devinecakes@gmail.com</div>
-                    <div><img src="/image/map.svg" alt="">devinecakes@gmail.com</div>
-                 </div>
-            </div>
+    <footer class="footer">
+      <div class="foot1">
+        <img src="/image/foot-logo.png" alt="" />
+        <h3>Delivering Exceptionally Delicious Cakes for your Taste Buds</h3>
+      </div>
+      <div class="foot2">
+        <div>
+          <span><a href="index.html">Home</a></span>
+          <span><a href="birthday.html">Birthdays</a></span>
+          <span><a href="wedding.html">Weddings</a></span>
+          <span><a href="anniversary.html">Anniversary</a></span>
+          <span class="actives"><a href="sizes.html">Offers</a></span>
+          <span><a href="express.html">Express Delivery</a></span>
+        </div>
+      </div>
+      <div class="foot3">
+        <div>
+          <div><img src="/image/phone.svg" alt="" />+2225683038290</div>
+          <div><img src="/image/phone.svg" alt="" />+2225683038290</div>
+          <div><img src="/image/mail.svg" alt="" />devinecakes@gmail.com</div>
+          <div><img src="/image/map.svg" alt="" />devinecakes@gmail.com</div>
+        </div>
+      </div>
     </footer>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-        
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
 
-        <script src="/js/carol.js"></script>
-
-    </body>
+    <script src="/js/carol.js"></script>
+  </body>
 </html>
