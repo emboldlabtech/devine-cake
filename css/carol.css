@@ -227,6 +227,7 @@
 
   .card-text-left{
     display:flex;
+    flex-direction:column;
     width:70%;
     align-items: center;
     justify-content: space-between;
@@ -239,11 +240,11 @@
 }
 
 .card-text-left h5{
-  margin-left: 40px;
+  margin-left: 0px;
 }
 
 .card-text-left h2{
-  margin-right: 50px;
+  margin-right: 0px;
 }
 
 .wrapper {
