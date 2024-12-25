@@ -1,645 +1,546 @@
-
-.wedding-hero-container{
-    background:var(--light-magentar);
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    position:relative;
-    overflow:hidden;}
-
-.wedding-hero-content{
-    display:flex;
-    max-width:100vw;
-    align-items:center;
-    justify-content: center;
-    margin: 60px 40px;
-    position:relative;
-    z-index:10;
+.wedding-hero-container {
+  background: var(--light-magentar);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.wedding-hero-content .wedding-hero-left{
-    max-width:50%;
-    margin-right: 60px;
-    transition: var(--transition-1);
+.wedding-hero-content {
+  display: flex;
+  max-width: 100vw;
+  align-items: center;
+  justify-content: center;
+  margin: 60px 40px;
+  position: relative;
+  z-index: 10;
 }
 
-.wedding-hero-content .wedding-hero-left h1{
-    color: var(--magentar-dark);
-    font-size:45px;
-    margin-bottom:10px;
-    text-align: left;
+.wedding-hero-content .wedding-hero-left {
+  max-width: 50%;
+  margin-right: 60px;
+  transition: var(--transition-1);
 }
 
-.wedding-hero-content .wedding-hero-left p{
-    color:var(--magentar-dark);
-    font-size:16px;
-    margin-bottom: 30px;
-    font-weight:600;
+.wedding-hero-content .wedding-hero-left h1 {
+  color: var(--magentar-dark);
+  font-size: 45px;
+  margin-bottom: 10px;
+  text-align: left;
 }
 
-.wedding-hero-content .wedding-hero-left .wedding-hero-btn{
-    background:var(--magentar);
-    padding: 10px 20px;
-    text-decoration:none;
-    color:white;
-    border-radius: 10px;
-    box-shadow:-5px 3px var(--magentar-dark);
-    transition:var(--transition-1);
-
+.wedding-hero-content .wedding-hero-left p {
+  color: var(--magentar-dark);
+  font-size: 16px;
+  margin-bottom: 30px;
+  font-weight: 600;
 }
 
-.wedding-hero-content .wedding-hero-left .wedding-hero-btn:hover{
-    background:var(--light-magentar);
-    color:var(--magentar-dark);
-    box-shadow:-5px 3px var(--light-magentar);
-    border:solid 2px var(--magentar-dark);
+.wedding-hero-content .wedding-hero-left .wedding-hero-btn {
+  background: var(--magentar);
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  box-shadow: -5px 3px var(--magentar-dark);
+  transition: var(--transition-1);
 }
 
-.wedding-hero-content .wedding-hero-right{
-    max-width:50%;
-    transition: var(--transition-1);
-    animation: Hero_Animation 3s ease-in-out 1;
+.wedding-hero-content .wedding-hero-left .wedding-hero-btn:hover {
+  background: var(--light-magentar);
+  color: var(--magentar-dark);
+  box-shadow: -5px 3px var(--light-magentar);
+  border: solid 2px var(--magentar-dark);
 }
 
-.wedding-hero-down-image{
-    position:absolute;
-    bottom:0;
-    left:0;
-    right:50%;
-    margin-bottom:-10px;
-    opacity:.3;
+.wedding-hero-content .wedding-hero-right {
+  max-width: 50%;
+  transition: var(--transition-1);
+  animation: Hero_Animation 3s ease-in-out 1;
 }
 
-.wedding-hero-down-image img{
-    object-fit: cover;
-    overflow:hidden;
-    height:50vh;
+.wedding-hero-down-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 50%;
+  margin-bottom: -10px;
+  opacity: 0.3;
 }
 
+.wedding-hero-down-image img {
+  object-fit: cover;
+  overflow: hidden;
+  height: 50vh;
+}
 
 /*----================
 ANNIVERSARY COLOUR DESIGN HERE 
 =========================*/
 
-
-
-#anniversary-text h1{
-    color:var(--Anniversary-main-color);
+#anniversary-text h1 {
+  color: var(--Anniversary-main-color);
 }
 
-#anniversary-text p{
-    color:var(--Anniversary-second);
+#anniversary-text p {
+  color: var(--Anniversary-second);
 }
 
-#Anniversary-hero-container{
-    background:var(--Anniversary-bg);
- 
+#Anniversary-hero-container {
+  background: var(--Anniversary-bg);
 }
 
-
-
-#Anniversary-btn-box a{
-    background:var(--Anniversary-btn);
-    border-radius: 10px;
-    box-shadow:-5px 3px var(--Anniversary-main-color);
-    transition:var(--transition-1);
-
+#Anniversary-btn-box a {
+  background: var(--Anniversary-btn);
+  border-radius: 10px;
+  box-shadow: -5px 3px var(--Anniversary-main-color);
+  transition: var(--transition-1);
 }
 
-#Anniversary-btn-box:hover a{
-    background:var(--Anniversary-second);
-    color:var(--Anniversary-bg);
-    box-shadow:-5px 3px var(--Anniversary-second);
-    border:solid 2px var(--Anniversary-second);
+#Anniversary-btn-box:hover a {
+  background: var(--Anniversary-second);
+  color: var(--Anniversary-bg);
+  box-shadow: -5px 3px var(--Anniversary-second);
+  border: solid 2px var(--Anniversary-second);
 }
 
-#Anniversary-product-text{
-    color:var(--Anniversary-main-color);
+#Anniversary-product-text {
+  color: var(--Anniversary-main-color);
 }
-
-
 
 /*----================
 ANNIVERSARY COLOUR DESIGN HERE 
 =========================*/
 
+/*----================
+BIRTHDAY COLOUR DESIGN HERE 
+=========================*/
 
+#Birthday-text h1 {
+  color: rgb(73, 49, 3);
+  color: var(--Birthday-main-color);
+}
 
+#Birthday-text p {
+  color: var(--Birthday-main-color);
+}
 
+#Birthday-hero-container {
+  background: var(--Birthday-bg);
+}
 
+#Birthday-btn-box a {
+  background: var(--Birthday-btn);
+  border-radius: 10px;
+  box-shadow: -5px 3px var(--Birthday-main-color);
+  transition: var(--transition-1);
+}
 
+#Birthday-btn-box:hover a {
+  background: var(--Birthday-btn);
+  color: var(--Birthday-bg);
+  box-shadow: -5px 3px var(--Birthday-btn);
+  border: solid 2px var(--Birthday-main-color);
+}
+
+#Birthday-product-text {
+  color: var(--Birthday-main-color);
+}
 
 /*----================
 BIRTHDAY COLOUR DESIGN HERE 
 =========================*/
 
-
-
-#Birthday-text h1{
-    color:rgb(73, 49, 3);
-    color:var(--Birthday-main-color);
-}
-
-#Birthday-text p{
-    color:var(--Birthday-main-color);
-}
-
-#Birthday-hero-container{
-    background:var(--Birthday-bg);
- 
-}
-
-
-
-#Birthday-btn-box a{
-    background:var(--Birthday-btn);
-    border-radius: 10px;
-    box-shadow:-5px 3px var(--Birthday-main-color);
-    transition:var(--transition-1);
-
-}
-
-#Birthday-btn-box:hover a{
-    background:var(--Birthday-btn);
-    color:var(--Birthday-bg);
-    box-shadow:-5px 3px var(--Birthday-btn);
-    border:solid 2px var(--Birthday-main-color);
-}
-
-#Birthday-product-text{
-    color:var(--Birthday-main-color);
-}
-
-
-
 /*----================
-BIRTHDAY COLOUR DESIGN HERE 
+SIZE COLOUR DESIGN HERE 
 =========================*/
 
+#sizes-text h1 {
+  color: var(--Green-main-color);
+}
 
+#sizes-text p {
+  color: var(--Green-second-color);
+}
 
+#sizes-hero-container {
+  background: var(--Green-bg-color);
+}
 
+#sizes-btn-box a {
+  background: var(--Green-second-color);
+  border-radius: 10px;
+  box-shadow: -5px 3px var(--Green-main-color);
+  transition: var(--transition-1);
+}
+
+#sizes-btn-box:hover a {
+  background: var(--Green-second-color);
+  color: var(--Green-bg-color);
+  box-shadow: -5px 3px var(--Green-second);
+  border: solid 2px var(--Green-second);
+}
+
+#sizes-product-text {
+  color: var(--Green-main-color);
+}
 
 /*----================
 SIZE COLOUR DESIGN HERE 
 =========================*/
 
-
-
-#sizes-text h1{
-    color:var(--Green-main-color);
-}
-
-#sizes-text p{
-    color:var(--Green-second-color);
-}
-
-#sizes-hero-container{
-    background:var(--Green-bg-color);
- 
-}
-
-
-
-#sizes-btn-box a{
-    background:var(--Green-second-color);
-    border-radius: 10px;
-    box-shadow:-5px 3px var(--Green-main-color);
-    transition:var(--transition-1);
-
-}
-
-#sizes-btn-box:hover  a{
-    background:var(--Green-second-color);
-    color:var(--Green-bg-color);
-    box-shadow:-5px 3px var(--Green-second);
-    border:solid 2px var(--Green-second);
-}
-
-#sizes-product-text{
-    color:var(--Green-main-color);
-}
-
-
-
 /*----================
-SIZE COLOUR DESIGN HERE 
+EXPRESS COLOUR DESIGN HERE 
 =========================*/
 
+#express-text h1 {
+  color: var(--Express-main-color);
+}
 
+#express-text p {
+  color: var(--Express-second-color);
+}
 
+#express-hero-container {
+  background: var(--Express-bg-color);
+}
 
+#express-btn-box a {
+  background: var(--Express-second-color);
+  border-radius: 10px;
+  box-shadow: -5px 3px var(--Express-main-color);
+  transition: var(--transition-1);
+}
 
+#express-btn-box:hover a {
+  background: var(--Express-second-color);
+  color: var(--Express-bg-color);
+  box-shadow: -5px 3px var(--Express-second);
+  border: solid 2px var(--Express-second);
+}
 
-
-
+#express-product-text {
+  color: var(--Express-main-color);
+}
 
 /*----================
 EXPRESS COLOUR DESIGN HERE 
 =========================*/
 
-
-
-#express-text h1{
-    color:var(--Express-main-color);
+section {
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 100px 50px;
 }
 
-#express-text p{
-    color:var(--Express-second-color);
+#Layers_Cake {
+  padding: 0px 50px;
+  margin-top: -30px;
 }
 
-#express-hero-container{
-    background:var(--Express-bg-color);
- 
+.products-head-text {
+  margin-left: 50px;
 }
 
-
-
-#express-btn-box a{
-    background:var(--Express-second-color);
-    border-radius: 10px;
-    box-shadow:-5px 3px var(--Express-main-color);
-    transition:var(--transition-1);
-
+.products-head-text h1 {
+  color: var(--magentar-dark);
 }
 
-#express-btn-box:hover  a{
-    background:var(--Express-second-color);
-    color:var(--Express-bg-color);
-    box-shadow:-5px 3px var(--Express-second);
-    border:solid 2px var(--Express-second);
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
-#express-product-text{
-    color:var(--Express-main-color);
+.products-cards {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 30%;
+  height: 400px;
+  margin: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 1px 2px 10px rgba(94, 80, 80, 0.26);
+  margin-top: 40px;
 }
 
-
-
-/*----================
-EXPRESS COLOUR DESIGN HERE 
-=========================*/
-
-
-
-
-
-
-
-
-
-
-
-
-section{
-    margin:0;
-    box-sizing:border-box;
-    min-height:100vh;
-    padding: 100px 50px;
+.products-cards img {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  top: 0;
+  object-fit: cover;
+  object-position: center;
+  text-align: center;
+  transition: var(--transition-1);
 }
 
-#Layers_Cake{
-    padding:0px 50px;
-    margin-top:-30px;
+.products-cards:hover img {
+  transform: scale(1.1);
 }
 
-
-.products-head-text{
-    margin-left:50px;
+.products-cards figcaption {
+  position: absolute;
+  padding: 5px 20px 40px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: 24px 24px 16px 16px;
 }
 
-.products-head-text h1{
-    color:var(--magentar-dark);
+.products-cards figcaption::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 24px 24px 16px 16px;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(27.25px);
+  opacity: 0.9;
+  z-index: -1;
 }
 
-.products-container{
-    display:flex;
-    flex-wrap:wrap;
-    align-items:center;
-    justify-content: center;
+.products-cards h3 {
+  font-family: "poppins";
+  font-weight: 500;
+  font-size: 1.5rem;
+  display: inline-block;
+  color: white;
+  margin-bottom: 40px;
+  margin-left: 20px;
 }
 
-.products-cards{
-    position:relative;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    max-width:30%;
-    height:400px;
-    margin:10px;
-    cursor:pointer;
-    overflow:hidden;
-    border-radius: 20px;
-    box-shadow: 1px 2px 10px rgba(94, 80, 80, 0.26);
-    margin-top: 40px;
+.products-cards p {
+  font-size: 1rem;
+  color: white;
+  padding-top: 10px;
+  margin-left: 20px;
 }
 
-.products-cards img{
-    width:100%;
-    height: 100%;
-    min-height: 100vh;
-    top: 0;
-    object-fit: cover;
-    object-position: center;
-    text-align: center;
-    transition:var(--transition-1);
+.products-cards a {
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  right: 10%;
+  display: inline-block;
+  font-size: 1em;
+  color: white;
+  background: var(--purple);
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 100px;
+  z-index: 1;
+  text-align: center;
+  transition: var(--transition-1);
 }
 
-.products-cards:hover img{
-    transform:scale(1.1);
+.products-cards:hover a {
+  color: var(--purple);
+  background: var(--purple-light);
+  text-decoration: none;
+  z-index: 1;
+  text-align: center;
 }
 
-.products-cards figcaption{
-    position:absolute;
-    padding: 5px 20px 40px;
-    bottom:0;
-    left:0;
-    right:0;
-    z-index:1;
-    border-radius: 24px 24px 16px 16px;
+.btn-More {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 100px;
+  margin: 40px 20px;
+  border: 1px solid var(--purple);
+  text-decoration: none;
+  color: var(--purple);
+  font-size: 20px;
+  transition: var(--transition-1);
 }
 
-.products-cards figcaption::before{
-    content:'';
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    border-radius: 24px 24px 16px 16px;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(27.25px);
-    opacity:0.9;
-    z-index:-1;
+.btn-More:hover {
+  background: var(--purple-light);
+  border: none;
+  color: white;
 }
-
-.products-cards h3{
-    font-family: 'poppins';
-    font-weight:500;
-    font-size:1.5rem;
-    display:inline-block;
-    color:white;
-    margin-bottom: 40px;
-    margin-left:20px;
-}
-
-.products-cards p{
-    font-size:1rem;
-    color:white;
-    padding-top: 10px;
-    margin-left:20px;
-}
-
-.products-cards a{
-    position:absolute;
-    bottom:20px;
-    left:10%;
-    right:10%;
-    display:inline-block;
-    font-size: 1em;
-    color:white;
-    background:var(--purple);
-    padding:10px;
-    text-decoration:none;
-    border-radius:100px;
-    z-index:1;
-    text-align:center;
-    transition:var(--transition-1);
-}
-
-
-.products-cards:hover a{
-    color:var(--purple);
-    background:var(--purple-light);
-    text-decoration:none;
-    z-index:1;
-    text-align:center;
-}
-
-
-.btn-More{
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border-radius:100px;
-    margin:40px 20px;
-    border:1px solid var(--purple);
-    text-decoration:none;
-    color:var(--purple);
-    font-size: 20px;
-    transition:var(--transition-1);
-}
-
-.btn-More:hover{
-    background:var(--purple-light);
-    border:none;
-    color:white;
-}
-
-
 
 .btn-arrow {
-    color: transparent;
-    display: block;
-    margin: 3rem;
-    position: relative;
-    width: 6rem;
-    height: 6rem;
+  color: transparent;
+  display: block;
+  margin: 3rem;
+  position: relative;
+  width: 6rem;
+  height: 6rem;
 
-    background-color: rgba(black, .05);
+  background-color: rgba(black, 0.05);
+
+  transition: all 150ms ease-out;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: #606060;
 
     transition: all 150ms ease-out;
+  }
+
+  &::before {
+    width: 75%;
+    height: 25%;
+  }
+
+  &::after {
+    width: 25%;
+    height: 75%;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: rgba(black, 0.1);
 
     &::before,
     &::after {
-        content: "";
-        display: block;
-        position: absolute;
-            top: 0;
-            left: 0;
-
-        background-color: #606060;
-        
-        transition: all 150ms ease-out;
+      background-color: #404040;
     }
+  }
 
-    &::before {
-        width: 75%;
-        height: 25%;
-    }
-
+  &.btn-arrow-left,
+  &.btn-arrow-right {
+    &::before,
     &::after {
-        width: 25%;
-        height: 75%;
+      top: 12.5%;
+      left: 12.5%;
     }
+  }
 
-    &:hover, &:focus {
-        background-color: rgba(black, .1);
-        
-        &::before,
-        &::after {
-            background-color: #404040;
-        }
-    }
+  &.btn-arrow-left {
+    transform: rotate(-45deg);
+  }
 
-    &.btn-arrow-left,
-    &.btn-arrow-right {
-        &::before,
-        &::after {
-            top: 12.5%;
-            left: 12.5%;
-        }
-    }
-
-    &.btn-arrow-left {
-        transform: rotate(-45deg);
-    }
-
-    &.btn-arrow-right {
-        transform: rotate(135deg);
-    }
+  &.btn-arrow-right {
+    transform: rotate(135deg);
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 768px) /*Mobile*/ {
-  
-    .products-head-text{
-        margin:0;
-        display:flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .products-head-text h1{
-        text-align:center;
-    }
-
-
-    .products-container{
-        flex-direction:column;
-    }
-    
-    .products-cards{
-        max-width:100%;
-    }
-
-    
-    .wedding-hero-content{
-        flex-direction:column;
-        margin: 0px;
-        z-index:10;
-        justify-content: center;
-        align-items:center;
-        padding: 70px 0px;
-    }
-    
-    .wedding-hero-content .wedding-hero-left{
-        max-width:100%;
-        margin: 30px;
-    }
-    
-    .wedding-hero-content .wedding-hero-left h1{
-        font-size:30px;
-        margin-bottom:10px;
-    }
-    
-    .wedding-hero-content .wedding-hero-left p{
-        color:var(--magentar-dark);
-        font-size:14px;
-        margin-bottom: 30px;
-    }
-    
-    .wedding-btn-box{
-         margin-bottom: 50px;
-    }
-    
-    
-    .wedding-hero-content .wedding-hero-right{
-        max-width:90%;
-        min-width:80%;
-    }
-
-    .wedding-hero-right img{
-        max-width:100%;
-    }
-    
-    
-    .wedding-hero-down-image{
-         right:40%;
-        margin-bottom:-5px;
-    }
-    
-    .wedding-hero-down-image img{
-        height:30vh;
-    }
-
-/*   PRODUCT MOBILE DESIGN EHRE*/
-/*   PRODUCT MOBILE DESIGN EHRE*/
-/*   PRODUCT MOBILE DESIGN EHRE*/
-/*   PRODUCT MOBILE DESIGN EHRE*/
-/*   PRODUCT MOBILE DESIGN EHRE*/
-
-section{
-    padding: 100px 30px;
-}
-
-
-.products-cards:hover img{
-    transform:scale(1.05);
-    object-position: right;
-}
-
-.products-cards figcaption{
-    padding: 5px 25px 40px;
-}
-
-.products-cards figcaption::before{
-    backdrop-filter: blur(30px);
-    opacity:0.9;
-}
-
-.products-cards h3{
-    font-size:2rem;
-    margin-top: 0px;
-}
-
-.products-cards p{
-    font-size:1rem;
-}
-
-.products-cards a{
-    font-size: 1.25em;
-}
-
-
-.products-cards:hover a{
-    font-size: 1.1em;
-}
-
-   
-
-
-
-
-
-
-
+  .products-head-text {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+
+  .products-head-text h1 {
+    text-align: center;
+  }
+
+  .products-container {
+    flex-direction: column;
+  }
+
+  .products-cards {
+    max-width: 100%;
+  }
+
+  .wedding-hero-content {
+    flex-direction: column;
+    margin: 0px;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0px;
+  }
+
+  .wedding-hero-content .wedding-hero-left {
+    max-width: 100%;
+    margin: 30px;
+  }
+
+  .wedding-hero-content .wedding-hero-left h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .wedding-hero-content .wedding-hero-left p {
+    color: var(--magentar-dark);
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .wedding-btn-box {
+    margin-bottom: 50px;
+  }
+
+  .wedding-hero-content .wedding-hero-right {
+    max-width: 90%;
+    min-width: 80%;
+  }
+
+  .wedding-hero-right img {
+    max-width: 100%;
+  }
+
+  .wedding-hero-down-image {
+    right: 40%;
+    margin-bottom: -5px;
+  }
+
+  .wedding-hero-down-image img {
+    height: 30vh;
+  }
+
+  /*   PRODUCT MOBILE DESIGN EHRE*/
+  /*   PRODUCT MOBILE DESIGN EHRE*/
+  /*   PRODUCT MOBILE DESIGN EHRE*/
+  /*   PRODUCT MOBILE DESIGN EHRE*/
+  /*   PRODUCT MOBILE DESIGN EHRE*/
+
+  section {
+    padding: 100px 30px;
+  }
+
+  .products-cards:hover img {
+    transform: scale(1.05);
+    object-position: right;
+  }
+
+  .products-cards figcaption {
+    padding: 5px 25px 40px;
+  }
+
+  .products-cards figcaption::before {
+    backdrop-filter: blur(30px);
+    opacity: 0.9;
+  }
+
+  .products-cards h3 {
+    font-size: 2rem;
+    margin-top: 0px;
+  }
+
+  .products-cards p {
+    font-size: 1rem;
+  }
+
+  .products-cards a {
+    font-size: 1.25em;
+  }
+
+  .products-cards:hover a {
+    font-size: 1.1em;
+  }
+}
